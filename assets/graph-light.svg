@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="gt gd">
+  <title id="gt">README Studio as a graph</title>
+  <desc id="gd">README Studio reads profile.json; README Studio generates Hero; README Studio generates Stack panel; README Studio generates Graph; README Studio generates Buttons; Hero embedded in README.md; Stack panel embedded in README.md; Graph embedded in README.md; Buttons embedded in README.md; preview.py checks README.md.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8C959F"/></marker></defs>
+  <style>
+    .panel { fill: #FFFFFF; stroke: #D0D7DE; }
+    .bar { fill: #F6F8FA; }
+    .rule { stroke: #D0D7DE; }
+    .q { font: 500 14px ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; fill: #1F2328; }
+    .kw { fill: #2F7D1F; }
+    .edge { stroke: #8C959F; stroke-width: 1.5; fill: none; }
+    .rel { font: 500 9.5px ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; fill: #59636E; }
+    .relbg { fill: #FFFFFF; }
+    .cap { font: 600 11.5px -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
+    .cap-big { font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
+    .legend { font: 400 12px -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; fill: #59636E; }
+    .ring { fill: none; stroke: #2F7D1F; stroke-width: 2; }
+    .node { transform-box: fill-box; transform-origin: center; animation: pop .5s cubic-bezier(.2,.8,.3,1.2) both; }
+    .link { animation: fade .5s ease-out both; }
+    .edge.draw { stroke-dasharray: 1; animation: draw .6s ease-out both; }
+    .ring { transform-box: fill-box; transform-origin: center; animation: pulse 2.8s ease-out 2.4s infinite both; }
+    @keyframes pop { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0% { opacity: .7; transform: scale(1); } 80%, 100% { opacity: 0; transform: scale(1.45); } }
+    @media (prefers-reduced-motion: reduce) { .node, .link, .edge.draw, .ring { animation: none; } .ring { opacity: 0; } }
+  </style>
+  <rect class="panel" x="1" y="1" width="898" height="558" rx="16"/>
+  <path class="bar" d="M1 17 a16 16 0 0 1 16 -16 H883 a16 16 0 0 1 16 16 V48 H1 z"/>
+  <line class="rule" x1="1" y1="48" x2="899" y2="48"/>
+  <text class="q" x="28" y="30"><tspan class="kw">MATCH</tspan> (s:Skill {name: &quot;README Studio&quot;})-[r]-&gt;(n) <tspan class="kw">RETURN</tspan> s, r, n</text>
+  <g>
+    <g class="link" style="animation-delay:0.52s">
+      <line class="edge draw" pathLength="1" style="animation-delay:0.52s" x1="408.0" y1="279.0" x2="162.2" y2="279.0" marker-end="url(#arrow)"/>
+      <g transform="translate(285.1 279.0) rotate(0.0)"><rect class="relbg" x="-18.8" y="-7" width="37.5" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">READS</text></g>
+    </g>
+    <g class="link" style="animation-delay:0.64s">
+      <line class="edge draw" pathLength="1" style="animation-delay:0.64s" x1="481.2" y1="250.9" x2="616.2" y2="129.4" marker-end="url(#arrow)"/>
+      <g transform="translate(548.7 190.2) rotate(-42.0)"><rect class="relbg" x="-30.6" y="-7" width="61.1" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">GENERATES</text></g>
+    </g>
+    <g class="link" style="animation-delay:0.76s">
+      <line class="edge draw" pathLength="1" style="animation-delay:0.76s" x1="490.3" y1="267.1" x2="599.8" y2="234.9" marker-end="url(#arrow)"/>
+      <g transform="translate(545.0 251.0) rotate(-16.4)"><rect class="relbg" x="-30.6" y="-7" width="61.1" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">GENERATES</text></g>
+    </g>
+    <g class="link" style="animation-delay:0.88s">
+      <line class="edge draw" pathLength="1" style="animation-delay:0.88s" x1="490.1" y1="291.5" x2="609.4" y2="328.5" marker-end="url(#arrow)"/>
+      <g transform="translate(549.8 310.0) rotate(17.3)"><rect class="relbg" x="-30.6" y="-7" width="61.1" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">GENERATES</text></g>
+    </g>
+    <g class="link" style="animation-delay:1.00s">
+      <line class="edge draw" pathLength="1" style="animation-delay:1.00s" x1="481.0" y1="307.4" x2="616.4" y2="431.4" marker-end="url(#arrow)"/>
+      <g transform="translate(548.7 369.4) rotate(42.5)"><rect class="relbg" x="-30.6" y="-7" width="61.1" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">GENERATES</text></g>
+    </g>
+    <g class="link" style="animation-delay:1.12s">
+      <line class="edge draw" pathLength="1" style="animation-delay:1.12s" x1="661.4" y1="129.0" x2="785.4" y2="250.9" marker-end="url(#arrow)"/>
+      <g transform="translate(723.4 190.0) rotate(44.5)"><rect class="relbg" x="-36.5" y="-7" width="72.9" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">EMBEDDED_IN</text></g>
+    </g>
+    <g class="link" style="animation-delay:1.12s">
+      <line class="edge draw" pathLength="1" style="animation-delay:1.12s" x1="678.0" y1="235.4" x2="775.6" y2="267.2" marker-end="url(#arrow)"/>
+      <g transform="translate(726.8 251.3) rotate(18.0)"><rect class="relbg" x="-36.5" y="-7" width="72.9" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">EMBEDDED_IN</text></g>
+    </g>
+    <g class="link" style="animation-delay:1.12s">
+      <line class="edge draw" pathLength="1" style="animation-delay:1.12s" x1="668.5" y1="328.6" x2="775.6" y2="293.0" marker-end="url(#arrow)"/>
+      <g transform="translate(722.1 310.8) rotate(-18.3)"><rect class="relbg" x="-36.5" y="-7" width="72.9" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">EMBEDDED_IN</text></g>
+    </g>
+    <g class="link" style="animation-delay:1.12s">
+      <line class="edge draw" pathLength="1" style="animation-delay:1.12s" x1="661.3" y1="431.9" x2="785.5" y2="309.2" marker-end="url(#arrow)"/>
+      <g transform="translate(723.4 370.5) rotate(-44.7)"><rect class="relbg" x="-36.5" y="-7" width="72.9" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">EMBEDDED_IN</text></g>
+    </g>
+    <g class="link" style="animation-delay:1.24s">
+      <line class="edge draw" pathLength="1" style="animation-delay:1.24s" x1="815.0" y1="428.3" x2="815.0" y2="321.5" marker-end="url(#arrow)"/>
+      <g transform="translate(815.0 374.9) rotate(-90.0)"><rect class="relbg" x="-21.7" y="-7" width="43.4" height="13" rx="3"/><text class="rel" text-anchor="middle" y="3.5">CHECKS</text></g>
+    </g>
+  </g>
+  <g class="node" style="animation-delay:0.15s">
+    <circle class="ring" cx="450" cy="279" r="42"/>
+    <circle cx="450" cy="279" r="42" fill="#2F7D1F" stroke="#235E17" stroke-width="2"/>
+    <text class="cap-big" x="450" y="276" text-anchor="middle" fill="#FFFFFF">README</text>
+    <text class="cap-big" x="450" y="290" text-anchor="middle" fill="#FFFFFF">Studio</text>
+  </g>
+  <g class="node" style="animation-delay:0.27s">
+    <circle cx="120" cy="279" r="40" fill="#4C8EDA" stroke="#2870C2" stroke-width="2"/>
+    <text class="cap" x="120" y="283" text-anchor="middle" fill="#FFFFFF">profile.json</text>
+  </g>
+  <g class="node" style="animation-delay:0.39s">
+    <circle cx="640" cy="108" r="30" fill="#FFC454" stroke="#D7A013" stroke-width="2"/>
+    <text class="cap" x="640" y="112" text-anchor="middle" fill="#0D1117">Hero</text>
+  </g>
+  <g class="node" style="animation-delay:0.51s">
+    <circle cx="640" cy="223" r="40" fill="#FFC454" stroke="#D7A013" stroke-width="2"/>
+    <text class="cap" x="640" y="227" text-anchor="middle" fill="#0D1117">Stack panel</text>
+  </g>
+  <g class="node" style="animation-delay:0.63s">
+    <circle cx="640" cy="338" r="30" fill="#FFC454" stroke="#D7A013" stroke-width="2"/>
+    <text class="cap" x="640" y="342" text-anchor="middle" fill="#0D1117">Graph</text>
+  </g>
+  <g class="node" style="animation-delay:0.75s">
+    <circle cx="640" cy="453" r="30" fill="#FFC454" stroke="#D7A013" stroke-width="2"/>
+    <text class="cap" x="640" y="457" text-anchor="middle" fill="#0D1117">Buttons</text>
+  </g>
+  <g class="node" style="animation-delay:0.87s">
+    <circle cx="815" cy="280" r="39" fill="#ECB5C9" stroke="#DA7298" stroke-width="2"/>
+    <text class="cap" x="815" y="284" text-anchor="middle" fill="#0D1117">README.md</text>
+  </g>
+  <g class="node" style="animation-delay:0.99s">
+    <circle cx="815" cy="468" r="40" fill="#569480" stroke="#447666" stroke-width="2"/>
+    <text class="cap" x="815" y="472" text-anchor="middle" fill="#FFFFFF">preview.py</text>
+  </g>
+  <circle cx="34" cy="534" r="6" fill="#2F7D1F" stroke="#235E17"/>
+  <text class="legend" x="46" y="538">Skill</text>
+  <circle cx="102.24000000000001" cy="534" r="6" fill="#4C8EDA" stroke="#2870C2"/>
+  <text class="legend" x="114.24000000000001" y="538">Input</text>
+  <circle cx="173.60000000000002" cy="534" r="6" fill="#FFC454" stroke="#D7A013"/>
+  <text class="legend" x="185.60000000000002" y="538">Panel</text>
+  <circle cx="248.08000000000004" cy="534" r="6" fill="#ECB5C9" stroke="#DA7298"/>
+  <text class="legend" x="260.08000000000004" y="538">Output</text>
+  <circle cx="326.16" cy="534" r="6" fill="#569480" stroke="#447666"/>
+  <text class="legend" x="338.16" y="538">Check</text>
+</svg>

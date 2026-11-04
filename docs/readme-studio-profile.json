@@ -1,0 +1,159 @@
+{
+  "name": "README Studio",
+  "tagline": "A Claude skill that designs animated GitHub READMEs",
+  "code_line": "python3 generate.py profile.json out/",
+  "accent": {
+    "dark": "#6DB33F",
+    "light": "#2F7D1F"
+  },
+  "now": {
+    "heading": "Made by",
+    "title": "Saikat Kumar Gain",
+    "subtitle": "Backend engineer, Dhaka",
+    "link": "github.com/SKgain"
+  },
+  "pipeline": [
+    {
+      "label": "Your facts",
+      "note": "profile.json"
+    },
+    {
+      "label": "generate",
+      "note": "SVG panels"
+    },
+    {
+      "label": "preview",
+      "note": "both themes checked"
+    },
+    {
+      "label": "GitHub",
+      "note": "your README"
+    }
+  ],
+  "links": [
+    {
+      "label": "Download the skill",
+      "url": "https://github.com/SKgain/readme-studio/releases/latest",
+      "primary": true
+    },
+    {
+      "label": "Example profile",
+      "url": "readme-studio/assets/example-profile.json"
+    },
+    {
+      "label": "Design rules",
+      "url": "readme-studio/references/design-rules.md"
+    }
+  ],
+  "graph": {
+    "center": {
+      "label": "README Studio",
+      "kind": "Skill"
+    },
+    "nodes": [
+      {
+        "id": "pj",
+        "label": "profile.json",
+        "kind": "Input",
+        "x": 120,
+        "y": 231
+      },
+      {
+        "id": "h",
+        "label": "Hero",
+        "kind": "Panel",
+        "x": 640,
+        "y": 60
+      },
+      {
+        "id": "s",
+        "label": "Stack panel",
+        "kind": "Panel",
+        "x": 640,
+        "y": 175
+      },
+      {
+        "id": "g",
+        "label": "Graph",
+        "kind": "Panel",
+        "x": 640,
+        "y": 290
+      },
+      {
+        "id": "b",
+        "label": "Buttons",
+        "kind": "Panel",
+        "x": 640,
+        "y": 405
+      },
+      {
+        "id": "r",
+        "label": "README.md",
+        "kind": "Output",
+        "x": 815,
+        "y": 232
+      },
+      {
+        "id": "pv",
+        "label": "preview.py",
+        "kind": "Check",
+        "x": 815,
+        "y": 420
+      }
+    ],
+    "edges": [
+      [
+        "center",
+        "pj",
+        "READS"
+      ],
+      [
+        "center",
+        "h",
+        "GENERATES"
+      ],
+      [
+        "center",
+        "s",
+        "GENERATES"
+      ],
+      [
+        "center",
+        "g",
+        "GENERATES"
+      ],
+      [
+        "center",
+        "b",
+        "GENERATES"
+      ],
+      [
+        "h",
+        "r",
+        "EMBEDDED_IN"
+      ],
+      [
+        "s",
+        "r",
+        "EMBEDDED_IN"
+      ],
+      [
+        "g",
+        "r",
+        "EMBEDDED_IN"
+      ],
+      [
+        "b",
+        "r",
+        "EMBEDDED_IN"
+      ],
+      [
+        "pv",
+        "r",
+        "CHECKS"
+      ]
+    ],
+    "query": "MATCH (s:Skill {name: \"README Studio\"})-[r]->(n) RETURN s, r, n",
+    "height": 560
+  }
+}

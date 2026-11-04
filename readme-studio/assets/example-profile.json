@@ -1,0 +1,86 @@
+{
+  "name": "Saikat Kumar Gain",
+  "tagline": "Backend engineer building reactive, event-driven systems",
+  "code_line": "Flux.from(events).flatMap(service::handle)",
+  "accent": { "dark": "#6DB33F", "light": "#2F7D1F" },
+  "now": {
+    "title": "Dhrubok Infotech",
+    "subtitle": "Backend engineer, Dhaka",
+    "link": "saikatgain.site"
+  },
+  "pipeline": [
+    { "label": "Gateway", "note": "auth and routing" },
+    { "label": "Kafka", "note": "event log" },
+    { "label": "WebFlux", "note": "reactive service" },
+    { "label": "Neo4j", "note": "graph store" }
+  ],
+  "links": [
+    { "label": "saikatgain.site", "url": "https://saikatgain.site", "primary": true, "alt": "Portfolio: saikatgain.site" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/saikat-kumar-gain-b059422b0/" },
+    { "label": "Email", "url": "mailto:saikatgain.cse@gmail.com" },
+    { "label": "LeetCode", "url": "https://leetcode.com/u/skgain/" },
+    { "label": "Codeforces", "url": "https://codeforces.com/profile/saikatgain630" }
+  ],
+  "intro": "I build non-blocking microservices with **Spring WebFlux**, **Kafka** and **Neo4j** at **Dhrubok Infotech Service Ltd**. I care about event-driven architecture, clean API contracts, and code that keeps working under load.",
+  "stack": [
+    { "layer": "Language and framework", "items": ["Java", "Spring Boot", "Spring WebFlux", "Spring Security", "Hibernate"] },
+    { "layer": "Data", "items": ["Neo4j", "PostgreSQL", "MySQL", "Redis"] },
+    { "layer": "Messaging", "items": ["Apache Kafka", "Firebase"] },
+    { "layer": "Tooling", "items": ["Docker", "Maven", "Git", "Postman", "IntelliJ IDEA"] }
+  ],
+  "core": ["Java", "Spring WebFlux", "Neo4j", "Apache Kafka"],
+  "projects": [
+    {
+      "name": "Quickart",
+      "url": "https://github.com/SKgain/quickart-backend",
+      "summary": "E-commerce backend split into 9 independently deployable services, with JWT auth at the gateway and Kafka between services.",
+      "tech": ["Java 21", "Spring Cloud", "Kafka", "Neo4j", "Eureka", "Config Server"],
+      "mermaid": "flowchart LR\n    C[Client] --> G[API Gateway<br/>JWT auth]\n    G --> S[Domain services<br/>9 in total]\n    S <--> K[(Kafka)]\n    S -.registers.-> E[Eureka]\n    S -.config.-> CF[Config Server]"
+    },
+    {
+      "name": "TaskMaster",
+      "url": "https://github.com/SKgain/taskmaster-backend",
+      "summary": "Project management backend with role-based access, real-time WebSocket chat, Gemini-generated tasks and analytics dashboards.",
+      "tech": ["Java 21", "Spring Boot", "PostgreSQL", "Docker"]
+    },
+    {
+      "name": "BanglaBERT Semantic Similarity API",
+      "url": "https://github.com/SKgain/semantic-similarity-backend",
+      "summary": "My thesis: Spring Boot serves a fine-tuned BanglaBERT model that rates Bangla sentence pairs as high, moderate or low similarity.",
+      "tech": ["Java", "Spring Boot", "Python", "Docker"]
+    }
+  ],
+  "publications": [
+    { "title": "Ancient Bengal Numismatic Dataset of Vanga Janapada, Gauda, Samatata, and Harikela Coinage", "venue": "Q1 journal" },
+    { "title": "Bangla Semantic Analysis Using a Transformer-Based BanglaBERT Model", "venue": "Conference" },
+    { "title": "Explainable Stacking Machine Learning Ensemble Model for Liver Disease Prediction", "venue": "Conference" },
+    { "title": "Stroke Prediction Using Ensemble Machine and Deep Learning Models", "venue": "Q2 journal" }
+  ],
+  "graph": {
+    "title": "Everything, connected",
+    "center": { "label": "Saikat", "kind": "Engineer" },
+    "nodes": [
+      { "id": "D", "label": "Dhrubok", "kind": "Company" },
+      { "id": "Q", "label": "Quickart", "kind": "Project" },
+      { "id": "T", "label": "TaskMaster", "kind": "Project" },
+      { "id": "B", "label": "BanglaBERT API", "kind": "Project" },
+      { "id": "p1", "label": "Bangla semantics", "kind": "Paper" },
+      { "id": "p2", "label": "Liver disease", "kind": "Paper" },
+      { "id": "p3", "label": "Stroke prediction", "kind": "Paper" },
+      { "id": "p4", "label": "Bengal coinage", "kind": "Paper" },
+      { "id": "W", "label": "WebFlux", "kind": "Technology" },
+      { "id": "N", "label": "Neo4j", "kind": "Technology" },
+      { "id": "K", "label": "Kafka", "kind": "Technology" },
+      { "id": "P", "label": "PostgreSQL", "kind": "Technology" }
+    ],
+    "edges": [
+      ["center", "D", "WORKS_AT"],
+      ["center", "Q", "BUILT"], ["center", "T", "BUILT"], ["center", "B", "BUILT"],
+      ["center", "p1", "PUBLISHED"], ["center", "p2", "PUBLISHED"], ["center", "p3", "PUBLISHED"], ["center", "p4", "PUBLISHED"],
+      ["D", "W", "USES"], ["D", "N", "USES"], ["D", "K", "USES"],
+      ["Q", "K", "USES"], ["Q", "N", "USES"], ["T", "P", "USES"],
+      ["B", "p1", "IMPLEMENTS"]
+    ]
+  },
+  "footer": "BSc in Computer Science and Engineering, IUBAT. Based in Dhaka, Bangladesh."
+}

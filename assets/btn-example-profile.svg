@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" role="img" aria-label="Example profile">
+  <title>Example profile</title>
+  <style>.b { font: 500 15px -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; fill: #F0F6FC; }</style>
+  <rect x="0.5" y="0.5" width="149" height="39" rx="10" fill="#21262D" stroke="#3D444D"/>
+  <text class="b" x="75.0" y="25.5" text-anchor="middle">Example profile</text>
+</svg>
