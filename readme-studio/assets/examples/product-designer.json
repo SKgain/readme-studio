@@ -1,0 +1,139 @@
+{
+ "theme": "sunset",
+ "name": "Mina Park",
+ "tagline": "Product designer crafting calm, accessible interfaces",
+ "code_line": "--radius: 12px; --space: 8px; --motion: 200ms ease-out;",
+ "now": {
+  "title": "Lumen Health",
+  "subtitle": "Product designer, Seoul",
+  "link": "minapark.design"
+ },
+ "pipeline": [
+  {
+   "label": "Research",
+   "note": "interviews"
+  },
+  {
+   "label": "Wireframe",
+   "note": "flows"
+  },
+  {
+   "label": "Prototype",
+   "note": "Figma"
+  },
+  {
+   "label": "Ship",
+   "note": "with engineers"
+  }
+ ],
+ "links": [
+  {
+   "label": "minapark.design",
+   "url": "#",
+   "primary": true
+  },
+  {
+   "label": "Dribbble",
+   "url": "#"
+  },
+  {
+   "label": "LinkedIn",
+   "url": "#"
+  }
+ ],
+ "stack": [
+  {
+   "layer": "Design",
+   "items": [
+    "Figma",
+    "FigJam",
+    "Framer"
+   ]
+  },
+  {
+   "layer": "Research",
+   "items": [
+    "Maze",
+    "Dovetail"
+   ]
+  },
+  {
+   "layer": "Build",
+   "items": [
+    "HTML",
+    "CSS",
+    "Storybook"
+   ]
+  }
+ ],
+ "core": [
+  "Figma",
+  "Framer"
+ ],
+ "projects_style": "cards",
+ "projects": [
+  {
+   "name": "Lumen care app",
+   "url": "#",
+   "summary": "Redesigned appointment booking for a telehealth app, cutting the flow from nine steps to four.",
+   "tech": [
+    "Figma",
+    "Maze",
+    "Framer"
+   ]
+  },
+  {
+   "name": "Calm design system",
+   "url": "#",
+   "summary": "Tokens, components and motion guidelines shared by design and engineering.",
+   "tech": [
+    "Figma",
+    "Storybook",
+    "CSS"
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "when": "2024 - now",
+   "title": "Product designer",
+   "place": "Lumen Health",
+   "note": "Leading design for patient booking and messaging.",
+   "current": true
+  },
+  {
+   "when": "2021 - 2024",
+   "title": "UI designer",
+   "place": "Studio Arc",
+   "note": "Brand and product work for early-stage startups."
+  },
+  {
+   "when": "2021",
+   "title": "BFA, Visual Communication",
+   "place": "Hongik University"
+  }
+ ],
+ "focus": [
+  {
+   "label": "Building",
+   "items": [
+    "Motion guidelines for Calm",
+    "Accessible charts"
+   ]
+  },
+  {
+   "label": "Learning",
+   "items": [
+    "Framer components",
+    "Data visualization"
+   ]
+  },
+  {
+   "label": "Exploring",
+   "items": [
+    "Voice interfaces",
+    "Design tokens in code"
+   ]
+  }
+ ]
+}

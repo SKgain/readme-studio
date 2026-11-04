@@ -1,0 +1,11 @@
+{"theme":"pastel","name":"Ayesha Rahman","tagline":"QA engineer who makes releases boring, in the best way",
+ "code_line":"await expect(page.getByRole('button')).toBeVisible();",
+ "now":{"title":"Shopwise","subtitle":"Senior SDET, Dhaka","link":"ayesha.dev"},
+ "pipeline":[{"label":"Commit","note":"pull request"},{"label":"Unit","note":"JUnit, Jest"},{"label":"API","note":"REST Assured"},{"label":"E2E","note":"Playwright"},{"label":"Release","note":"green build"}],
+ "links":[{"label":"ayesha.dev","url":"#","primary":true},{"label":"LinkedIn","url":"#"},{"label":"Email","url":"#"}],
+ "stack":[{"layer":"Automation","items":["Playwright","Selenium","Cypress","REST Assured"]},{"layer":"Languages","items":["TypeScript","Java","Python"]},{"layer":"Performance","items":["k6","JMeter"]},{"layer":"Pipeline","items":["GitHub Actions","Docker","Allure"]}],
+ "core":["Playwright","TypeScript","k6"],
+ "graph":{"center":{"label":"Ayesha","kind":"QA Engineer"},"nodes":[
+  {"id":"s","label":"Shopwise","kind":"Company"},{"id":"f","label":"Checkout suite","kind":"Test suite"},{"id":"p","label":"Load tests","kind":"Test suite"},
+  {"id":"pw","label":"Playwright","kind":"Tool"},{"id":"k6","label":"k6","kind":"Tool"},{"id":"o","label":"pytest plugin","kind":"Open source"}],
+  "edges":[["center","s","WORKS_AT"],["center","f","AUTOMATED"],["center","p","AUTOMATED"],["center","o","MAINTAINS"],["f","pw","USES"],["p","k6","USES"],["s","f","RUNS"]],"height":520}}

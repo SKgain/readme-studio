@@ -1,0 +1,8 @@
+{"theme":"aurora","name":"Daniel Okafor","tagline":"Full stack developer shipping products end to end",
+ "code_line":"export default async function Page() { return <App /> }",
+ "pipeline":[{"label":"Next.js","note":"interface"},{"label":"tRPC","note":"typed API"},{"label":"Postgres","note":"data"},{"label":"Vercel","note":"edge deploy"}],
+ "links":[{"label":"Portfolio","url":"#","primary":true},{"label":"GitHub","url":"#"},{"label":"X","url":"#"}],
+ "stack":[{"layer":"Frontend","items":["React","Next.js","Tailwind CSS"]},{"layer":"Backend","items":["Node.js","tRPC","Prisma"]},{"layer":"Data","items":["PostgreSQL","Redis"]},{"layer":"Infra","items":["Vercel","Docker"]}],
+ "core":["Next.js","Node.js","PostgreSQL"],
+ "graph":{"center":{"label":"Daniel","kind":"Developer"},"nodes":[{"id":"a","label":"Invoicely","kind":"Product"},{"id":"b","label":"Trailmap","kind":"Product"},{"id":"n","label":"Next.js","kind":"Technology"},{"id":"pg","label":"PostgreSQL","kind":"Technology"},{"id":"c","label":"Freelance","kind":"Work"}],
+  "edges":[["center","a","BUILT"],["center","b","BUILT"],["center","c","DOES"],["a","n","USES"],["b","n","USES"],["a","pg","USES"]],"height":500}}
